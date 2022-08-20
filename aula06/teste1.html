@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>teste1</title>
+  <style>
+    body{
+      background-color: rgb(218, 218, 218);
+    }
+  </style>
+</head>
+<body>
+  
+  <script>
+    var nome = (window.prompt('qual seu nome? '))
+    var idade = Number (window.prompt('qual sua idade? '))
+    var sexo = (window.prompt('qual o seu sexo? '))
+    var altura = Number (window.prompt('qual sua altura? '))
+    var salario =Number (window.prompt('qual o seu salario? '))
+    //var soma = nome + idade + sexo + altura + salario
+    document.write(`seu nome é <strong>${nome}</strong> <br>`)
+    document.write(`sua idade é ${idade}<br>`)
+    document.write(`seu sexo é ${sexo}<br>`)
+    document.write(`sua altura é ${altura.toFixed(2)}<br>`)
+    document.write(`seu salario é ${salario.toFixed(3)}<br>`)
+  </script>
+</body>
+</html>
