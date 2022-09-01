@@ -19,9 +19,24 @@
   <h1>inciando estudos com DOM</h1>
   <p>aqui vai o resultado</p>
   <p>aprendendo a usar o <strong>DOM</strong> em javascript</p>
-  <div>Clique em mim</div>
+  <div id="msg">Clique em mim</div>
   <script>
+    var p1 = window.document.getElementsByTagName('p')[0] // [0 ou 1] simboliza a linha em que eu quero chamar exemplo p
+    window.document.write('está escrito assim: ' + p1.innerText) // innerhtml 
+   /* var d = window.document.getElementById('msg')
+    d.style.background = 'green'
+    //d.innerText = 'estou aguardando...'
+    //window.document.getElementById('msg').innerText = 'olá'
+    
+   var d = window.document.getElementsByName('msg')[0]
+   d.innerText = 'olá'
 
+   var d = window.document.getElementsByClassName('msg')[0]
+   d.innerText = 'olá'
+   */
+  var d = window.document.querySelector('div#msg') // div#msg o sianl de # representamos o id
+  //var d = window.document.querySelector('div.msg') div.msg representamos a class
+  d.style.background = 'blue'
   </script>
 </body>
 </html>
