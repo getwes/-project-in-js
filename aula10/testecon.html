@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>testecon</title>
+  <style>
+    div{
+    font: normal 18px arial;
+    background-color: red;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    line-height: 200px;
+    border-radius: 1rem;
+    box-shadow: 5px 10px black;
+    margin-left: 400px;
+    margin-top: 200px;
+    }
+  </style>
+</head>
+<body>
+  <div id="cl">
+    YOUTUBE
+  </div>
+  <script>
+     var c = window.document.getElementById('cl')
+     c.addEventListener('click',clicar)
+    function clicar(){
+
+      c.innerText = ('deu certo')
+      c.style.background = 'blue'
+      
+    }
+  </script>
+</body>
+</html>
