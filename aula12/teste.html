@@ -4,9 +4,30 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>eleção</title>
+  <title>imigração</title>
 </head>
 <body>
-  
+  <h1>controle de imigração</h1>
+  qual o seu pais de origem <input type="text" name="txtpai" id="txtpai">
+  <input type="button" value="verificar" onclick="calcular()">
+  <div id="res">
+ 
+    <script>
+      function calcular(){
+        var tex = window.document.getElementById('txtpai')
+        var res = window.document.getElementById('res')
+        var pais = (tex.value)
+        res.innerHTML = `<p>seu pais é <strong>${pais}</strong>`
+          if (pais == `brasil`){
+            res.innerHTML += `voce é brasieliro`
+
+          }else {
+            res.innerHTML += `voce é estrangeiro`
+
+          }
+        res.innerHTML += `<p>tenha um boa viagem!<p>`
+      }
+    </script>
+  </div>
 </body>
 </html>
